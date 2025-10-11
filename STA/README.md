@@ -19,7 +19,7 @@ This is in contrast to simulation based timing analysis where a stimulus is appl
 
 OpenSTA uses a TCL command interpreter to read the design, specify timing constraints and print timing reports.
 
-(**PHOTO**)
+![opensta](https://github.com/aneeshbankapur/GLS-and-STA-for-VSDBabySoC/blob/e0bec6647c48df06378a880d217f4d915dab5f49/STA/opensta.png)
 
 #### Timing Paths 
 
