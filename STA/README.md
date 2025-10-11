@@ -240,29 +240,29 @@ Below is the script that can be used to perform STA across the PVT corners for w
  set list_of_lib_files(12) "sky130_fd_sc_hd__ss_n40C_1v44.lib"
  set list_of_lib_files(13) "sky130_fd_sc_hd__ss_n40C_1v76.lib"
 
- read_liberty /data/VLSI/VSDBabySoC/OpenSTA/examples/timing_libs/avsdpll.lib
- read_liberty /data/VLSI/VSDBabySoC/OpenSTA/examples/timing_libs/avsddac.lib
+ read_liberty /data/OpenSTA/examples/timing_libs/avsdpll.lib
+ read_liberty /data/OpenSTA/examples/timing_libs/avsddac.lib
 
  for {set i 1} {$i <= [array size list_of_lib_files]} {incr i} {
- read_liberty /data/VLSI/VSDBabySoC/OpenSTA/examples/timing_libs/$list_of_lib_files($i)
- read_verilog /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/vsdbabysoc.synth.v
+ read_liberty /data/OpenSTA/examples/timing_libs/$list_of_lib_files($i)
+ read_verilog /data/OpenSTA/examples/BabySoC/vsdbabysoc.synth.v
  link_design vsdbabysoc
  current_design
- read_sdc /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/vsdbabysoc_synthesis.sdc
+ read_sdc /data/OpenSTA/examples/BabySoC/vsdbabysoc_synthesis.sdc
  check_setup -verbose
  report_checks -path_delay min_max -fields {nets cap slew input_pins fanout} -digits {4} > /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/min_max_$list_of_lib_files($i).txt
 
- exec echo "$list_of_lib_files($i)" >> /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_max_slack.txt
- report_worst_slack -max -digits {4} >> /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_max_slack.txt
+ exec echo "$list_of_lib_files($i)" >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_max_slack.txt
+ report_worst_slack -max -digits {4} >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_max_slack.txt
 
- exec echo "$list_of_lib_files($i)" >> /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_min_slack.txt
- report_worst_slack -min -digits {4} >> /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_min_slack.txt
+ exec echo "$list_of_lib_files($i)" >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_min_slack.txt
+ report_worst_slack -min -digits {4} >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_min_slack.txt
 
- exec echo "$list_of_lib_files($i)" >> /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_tns.txt
- report_tns -digits {4} >> /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_tns.txt
+ exec echo "$list_of_lib_files($i)" >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_tns.txt
+ report_tns -digits {4} >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_tns.txt
 
- exec echo "$list_of_lib_files($i)" >> /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_wns.txt
- report_wns -digits {4} >> /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_wns.txt
+ exec echo "$list_of_lib_files($i)" >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_wns.txt
+ report_wns -digits {4} >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_wns.txt
  }
 ```
 
