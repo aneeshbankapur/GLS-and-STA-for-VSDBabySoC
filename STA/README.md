@@ -200,7 +200,7 @@ This should allow OpenSTA to parse the Liberty file without throwing syntax erro
 
 After fixing the Liberty file comment syntax as shown above, you can rerun the script to perform complete timing analysis for VSDBabySoC:
 
-![Alt Text](Images/11.jpg)
+![Alt Text](https://github.com/aneeshbankapur/GLS-and-STA-for-VSDBabySoC/blob/efa2d4653726ef3d75a29d99d4775fecb218fc35/STA/basic_sta.png)
 
 ## VSDBabySoC PVT Corner Analysis (Post-Synthesis Timing)
 Static Timing Analysis (STA) is performed across various **PVT (Process-Voltage-Temperature)** corners to ensure the design meets timing requirements under different conditions.
