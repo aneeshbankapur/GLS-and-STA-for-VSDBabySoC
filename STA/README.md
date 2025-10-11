@@ -250,7 +250,7 @@ Below is the script that can be used to perform STA across the PVT corners for w
  current_design
  read_sdc /data/OpenSTA/examples/BabySoC/vsdbabysoc_synthesis.sdc
  check_setup -verbose
- report_checks -path_delay min_max -fields {nets cap slew input_pins fanout} -digits {4} > /data/VLSI/VSDBabySoC/OpenSTA/examples/BabySoC/STA_OUTPUT/min_max_$list_of_lib_files($i).txt
+ report_checks -path_delay min_max -fields {nets cap slew input_pins fanout} -digits {4} > /data/OpenSTA/examples/BabySoC/STA_OUTPUT/min_max_$list_of_lib_files($i).txt
 
  exec echo "$list_of_lib_files($i)" >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_max_slack.txt
  report_worst_slack -max -digits {4} >> /data/OpenSTA/examples/BabySoC/STA_OUTPUT/sta_worst_max_slack.txt
