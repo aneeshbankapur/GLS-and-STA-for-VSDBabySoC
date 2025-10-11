@@ -64,12 +64,12 @@ rename -enumerate
 ```yosys
 stat
 ```
+![stat](https://github.com/aneeshbankapur/GLS-and-STA-for-VSDBabySoC/blob/4ef96e8afb1a6c27e0c56c8cb374c5fe03065cc7/GLS/stat.png)
 ### **Step 8: Write the Synthesized Netlist**
 ```yosys
 write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/vsdbabysoc.synth.v
 ```
 ---
-(**PHOTO**)
 
 ## POST_SYNTHESIS SIMULATION AND WAVEFORMS
 ---
@@ -97,5 +97,5 @@ cd output/post_synth_sim/
 gtkwave post_synth_sim.vcd
 ```
 --
-(**PHOTO**)
+![gls](https://github.com/aneeshbankapur/GLS-and-STA-for-VSDBabySoC/blob/12feebef9222011ef430cc4de64fb33b93cb3fb5/GLS/gls.png)
 
