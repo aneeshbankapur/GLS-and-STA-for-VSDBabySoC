@@ -305,7 +305,22 @@ The following timing summary table was collected by running STA across 13 PVT co
 
 Metrics such as Worst Hold Slack, Worst Setup Slack, WNS, and TNS were extracted from the output reports.
 
-![Alt Text](Images/excel_data.png)
+| **PVT CORNER** | **Worst Setup Slack (ns)** | **Worst Hold Slack (ns)** | **WNS (ns)** | **TNS (ns)** |
+|--------------|-----------------------------|----------------------------|---------------|---------------|
+| sky130_fd_sc_hd__tt_025C_1v80.lib | 0.8250 | 0.3096 | 0.8250 | 0.0000 |
+| sky130_fd_sc_hd__ff_100C_1v65.lib | 2.2547 | 0.2491 | 2.2547 | 0.0000 |
+| sky130_fd_sc_hd__ff_100C_1v95.lib | 3.7001 | 0.1960 | 3.7001 | 0.0000 |
+| sky130_fd_sc_hd__ff_n40C_1v56.lib | 0.7712 | 0.2915 | 0.7712 | 0.0000 |
+| sky130_fd_sc_hd__ff_n40C_1v65.lib | 1.8179 | 0.2551 | 1.8179 | 0.0000 |
+| sky130_fd_sc_hd__ff_n40C_1v76.lib | 2.7370 | 0.2243 | 2.7370 | 0.0000 |
+| sky130_fd_sc_hd__ss_100C_1v40.lib | -13.7123 | 0.9053 | -13.7123 | -7604.4644 |
+| sky130_fd_sc_hd__ss_100C_1v60.lib | -6.7640 | 0.6420 | -6.7640 | -2878.2722 |
+| sky130_fd_sc_hd__ss_n40C_1v28.lib | -52.5709 | 1.8296 | -52.5709 | -37513.6758 |
+| sky130_fd_sc_hd__ss_n40C_1v35.lib | -32.9735 | 1.3475 | -32.9735 | -23734.2754 |
+| sky130_fd_sc_hd__ss_n40C_1v40.lib | -24.4784 | 1.1249 | -24.4784 | -17535.9336 |
+| sky130_fd_sc_hd__ss_n40C_1v44.lib | -19.8076 | 0.9909 | -19.8076 | -13926.1006 |
+| sky130_fd_sc_hd__ss_n40C_1v76.lib | -4.5342 | 0.5038 | -4.5342 | -1944.0411 |
+
 
 #### 📈Timing Plots Across PVT Corners
 
