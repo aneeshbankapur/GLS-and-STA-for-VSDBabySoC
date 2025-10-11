@@ -69,6 +69,7 @@ stat
 write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/vsdbabysoc.synth.v
 ```
 ---
+(**PHOTO**)
 
 ## POST_SYNTHESIS SIMULATION AND WAVEFORMS
 ---
@@ -96,4 +97,5 @@ cd output/post_synth_sim/
 gtkwave post_synth_sim.vcd
 ```
 --
+(**PHOTO**)
 
