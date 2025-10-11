@@ -324,10 +324,10 @@ Metrics such as Worst Hold Slack, Worst Setup Slack, WNS, and TNS were extracted
 
 #### 📈Timing Plots Across PVT Corners
 
-![Alt Text](Images/WHS.jpg)
+![Alt Text](https://github.com/aneeshbankapur/GLS-and-STA-for-VSDBabySoC/blob/ddae7c90155af28daa5188b4ed0460231506cb2c/STA/sta_hold.png)
 
-![Alt Text](Images/WSS.jpg)
+![Alt Text](https://github.com/aneeshbankapur/GLS-and-STA-for-VSDBabySoC/blob/ddae7c90155af28daa5188b4ed0460231506cb2c/STA/sta_setup.png)
 
-![Alt Text](Images/WNS.jpg)
+![Alt Text](https://github.com/aneeshbankapur/GLS-and-STA-for-VSDBabySoC/blob/ddae7c90155af28daa5188b4ed0460231506cb2c/STA/sta_wns.png)
 
-![Alt Text](Images/TNS.jpg)
+![Alt Text](https://github.com/aneeshbankapur/GLS-and-STA-for-VSDBabySoC/blob/ddae7c90155af28daa5188b4ed0460231506cb2c/STA/sta_tns.png)
